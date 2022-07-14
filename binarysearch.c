@@ -47,6 +47,6 @@ int main()
 			l=m-1;
 		}
 	}
-	printf("%d is not found", key);
+	printf("%d is not found\n", key);
 	return 0;
 }
