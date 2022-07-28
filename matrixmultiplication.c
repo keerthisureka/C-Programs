@@ -70,4 +70,8 @@ void main()
 			printf("\n");
 		}
 	}
+	else
+	{
+		printf("Matrix multiplication not possible! \n");
+	}
 }
