@@ -10,6 +10,7 @@ void main()
 	int a[r1][c1], b[r2][c2], c[r1][c2];
 	if(c1==r2)
 	{
+		//Accepting matrix 1
 		printf("Enter the elements of matrix 1: ");
 		for(i=0; i<r1; i++)
 		{
@@ -18,7 +19,7 @@ void main()
 				scanf("%d", &a[i][j]);
 			}
 		}
-		//Printing the entered matrix
+		//Printing matrix 1
 		for(i=0; i<r1; i++)
 		{
 			for(j=0; j<c1; j++)
@@ -27,7 +28,7 @@ void main()
 			}
 			printf("\n");
 		}
-		
+		//Accepting matrix 2
 		printf("Enter the elements of matrix 2: ");
 		for(i=0; i<r2; i++)
 		{
@@ -36,7 +37,7 @@ void main()
 				scanf("%d", &b[i][j]);
 			}
 		}
-		//Printing the entered matrix
+		//Printing matrix 2
 		for(i=0; i<r2; i++)
 		{
 			for(j=0; j<c2; j++)
