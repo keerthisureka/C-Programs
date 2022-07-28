@@ -35,7 +35,7 @@ int main()
 		m=(f+l)/2;
 		if(key==a[m])
 		{
-			printf("%d is found at location %d", key, m+1);
+			printf("%d is found at location %d\n", key, m+1);
 			return 0;
 		}
 		else if(key>a[m])
