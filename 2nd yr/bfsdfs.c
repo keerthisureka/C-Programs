@@ -1,7 +1,6 @@
 #include<stdio.h>
 #define MAX 5
 int adj[][MAX]={{0,1,0,1,0},{1,0,1,1,0},{0,1,0,0,1},{1,1,0,0,1},{0,0,1,1,0}};
-
 void bfs()
 {
 	int visited[MAX]={0};
@@ -25,7 +24,6 @@ void bfs()
 		}
 	}
 }
-
 void dfs(int start)
 {
 	int visited[MAX]={0};
