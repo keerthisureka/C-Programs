@@ -49,7 +49,7 @@ class Number extends Thread
 			} 
 		} 
 	 
-		} 
+	} 
 }
 class DemoThread { 
 	public static void main(String args[]) 
@@ -57,4 +57,4 @@ class DemoThread {
 		Number n = new Number(); 
 		n.start(); 
 	} 
- }
+}
