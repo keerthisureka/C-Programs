@@ -1,5 +1,3 @@
-package tyljava;
-
 import java.util.*;
 public class consecutive {
 	public static void main(String[] args) {
