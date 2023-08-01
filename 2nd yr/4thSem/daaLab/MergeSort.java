@@ -22,7 +22,6 @@ class msort {
 				}
 			}
 		}
-		
 		public void simplemerge(int a[], int l, int mid, int h) {
 			int n1 = mid-l+1;
 			int n2 = h-mid;
@@ -60,7 +59,6 @@ class msort {
 				j++; k++;
 			}
 		}
-		
 		public void mergesort(int a[], int l, int h) {
 			int mid;
 			if(l<h) {
@@ -70,7 +68,6 @@ class msort {
 				simplemerge(a, l, mid, h);
 			}
 		}
-		
 		public void print_array(int a[]) {
 			for(int i=0; i < a.length; i++) {
 				System.out.println(" " + a[i]);
@@ -80,7 +77,6 @@ class msort {
 }
 
 public class MergeSort {
-
 	public static void main(String[] args) {
 		long start, end, time;
 		int a[];
