@@ -6,7 +6,6 @@ class qsort {
 	int arr[];
 	//Create an array with random numbers
 	//User specifies the number of random elements
-	
 	public void create_array(int n, int choice) {
 		//choice = 0 for elements already in sorted order
 		//choice = 1 for elements already sorted in reverse order
@@ -73,7 +72,6 @@ class qsort {
 }
 
 public class QuickSort {
-
 	public static void main(String[] args) {
 		long start, end, time;
 		qsort obj = new qsort();
