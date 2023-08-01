@@ -29,6 +29,7 @@ class Knapsack
 			System.out.print(p_w[i]+"  ");
 		}
 	}
+	
 	public static void main(String[] args) 
 	{
 		Scanner sc=new Scanner(System.in); 
