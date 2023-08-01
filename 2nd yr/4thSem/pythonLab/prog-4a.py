@@ -48,3 +48,5 @@ for i in range(n):
 print("Initial array: ", arr)
 print("After insertion sort: ", insertion_sort(arr))
 print("After merge sort: ", merge_sort(arr))
+
+# Write a python program to implement insertion sort and merge sort using lists
