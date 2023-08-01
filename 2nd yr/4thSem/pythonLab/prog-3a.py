@@ -13,3 +13,5 @@ print("Number of words: ", len(l))
 print("Number of digits: ", d)
 print("Number of uppercase letters: ", uc)
 print("Number of lowercase letters: ", lc)
+
+# Write a Python program that accepts a sentence and find the number of words, digits, uppercase letters and lowercase letters.
