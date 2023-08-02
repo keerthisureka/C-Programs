@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Fibonacci Series</title>
+    </head>
+
+    <body>
+        <script>
+            var n = Number(prompt("Enter a number: "));
+            let n1 = 0, n2 = 1, next;
+            document.write("<center>" + "<h2>" + "Fibonacci Series" + "</h2>" + "</center>"+ "<br>");
+            for(let i=1; i<=n; i++) {
+                document.write("<b>" + "<center>" + n1 + "</center>" + "</b>" + "<br>");
+                next = n1 + n2;
+                n1 = n2;
+                n2 = next;
+            }
+        </script>
+    </body>
+</html>

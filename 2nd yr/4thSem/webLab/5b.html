@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Squares of numbers</title>
+    </head>
+    
+    <body>
+        <script>
+            document.write("<center>" + "<h2>" + "Squares of Numbers" + "</h2>" + "</center>")
+            var n = Number(prompt("Enter a number: "));
+            str = "";
+            for(let i=1; i<=n; i++) {
+                str = str + i + "^2 = " + (i*i) + "\n";
+            }
+            
+            alert("Squares of numbers upto " + n + " are: \n" + str);
+        </script>
+    </body>
+</html>
