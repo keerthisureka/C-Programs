@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Trying CSS</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            a:link {
+                color: red;
+            }
+            a:visited {
+                color: green;
+            }
+            a:hover {
+                color: cyan;
+            }
+            a:active {
+                color: blue;
+            }
+
+            .left {
+                text-align: left;
+                color: blue;
+            }
+            .center {
+                text-align: center;
+                text-decoration: underline;
+                font-family:'Courier New', Courier, monospace;
+                color: brown;
+            }
+            .right {
+                text-align: right;
+                text-decoration: overline;
+                color: forestgreen;
+            }
+
+            .c1 {
+                cursor: crosshair;
+            }
+            .c2 {
+                cursor: pointer;
+            }
+            .c3 {
+                cursor: grabbing;
+            }
+            .c4 {
+                cursor: text;
+            }
+            .c5 {
+                cursor: wait;
+            }
+            .c6 {
+                cursor: help;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: lightcyan;">
+        <h1>CSS (Inline, Internal and External)</h1>
+        <p>This paragraph is not styled</p>
+        <p class="left">This paragraph is styled by class "Left"</p>
+        <p class="center">This paragraph is styled by class "Center"</p>
+        <p class="right">This paragraph is styled by class "Right"</p>
+
+        <p><b>This is normal bold</b></p>
+        <p id="bold"><b>This bold text is styled</b></p>
+        <p><a href="link.html">This is a link</a></p>
+        <p class="c1">The cursor over the element is a plus sign</p>
+        <p class="c2">The cursor over the element is a pointing hand</p>
+        <p class="c3">The cursor over the element is a grasping hand</p>
+        <p class="c4">The cursor over the element is an I bar</p>
+        <p class="c5">The cursor over the element is a wait</p>
+        <p class="c6">The cursor over the element is a question mark</p>
+    </body>
+</html>
