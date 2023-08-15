@@ -1,0 +1,20 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+#box1 {
+    color: darkgreen;
+    padding: 15px;
+    font-weight: bold;
+}
+#box2 {
+    color: crimson;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: large;
+    border-style: groove;
+    border-radius: 15%;
+}
