@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Countries and Capitals</title>
+        <link rel="stylesheet" href="prog-6.css">
+    </head>
+
+    <body>
+        <script>
+            function display() {
+                var a = document.getElementById("box1").value;
+                document.getElementById("box2").value = a;
+            }
+        </script>
+        <br><br>
+
+        <h1 style="text-align: center; color: darkblue;"><u>Countries and Capitals</u></h1>
+        <div><form>
+            <select id="box1" onclick="display()">
+                <option value="">Select Country</option>
+                <option value="Paris">France</option>
+                <option value="New Delhi">India</option>
+                <option value="Kathmandu">Nepal</option>
+                <option value="London">United Kingdom</option>
+                <option value="Washington DC">United States of America</option>
+                <input type="text" id="box2">
+            </select>
+        </form></div>
+    </body>
+</html>
