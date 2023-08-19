@@ -1,4 +1,3 @@
-package tyljava;
 import java.util.Scanner;
 
 public class LeaderElement {
@@ -24,3 +23,8 @@ public class LeaderElement {
 		}
 	}
 }
+
+// WAP to display the elements which have all the elements on the right smaller to them
+// Ex: 1 6 17 3 4 5 2
+// o/p: 17 5 2
+// All the elements on the right to 17 are smaller than 17, similarly 5 and 2
