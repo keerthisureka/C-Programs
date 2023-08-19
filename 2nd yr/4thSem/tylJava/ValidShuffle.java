@@ -38,3 +38,8 @@ public class ValidShuffle {
 		}
 	}
 }
+
+// WAP to check if a string is a valid shuffle of two strings. You are given 3 strings first, second and third.
+// Third string is said to be a shuffle of first and second if it can be formed by interleaving the characters of
+// first and second string in a way that maintains the left to right ordering of characters in each string.
+// Ex: s1="abc"  s2="def"  res="dabecf" -- Valid!
