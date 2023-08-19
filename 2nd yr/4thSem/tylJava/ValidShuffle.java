@@ -1,4 +1,3 @@
-package tyljava;
 import java.util.Scanner;
 
 public class ValidShuffle {
