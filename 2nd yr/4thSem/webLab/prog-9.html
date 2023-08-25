@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Mouse Hover</title>
+        <script>
+            function hover(img){
+                img.src="daa.jpeg";
+                document.getElementById("one").innerHTML="This is a text on mouse hover event.";
+            }
+            function hoverout(img){
+                img.src="oneday.jpeg";
+                document.getElementById("one").innerHTML="This is a text on mouse hover out event.";
+            }
+        </script>
+    </head>
+
+    <body>
+        <p id="one"></p>
+        <img src="p1.png" onmouseover="hover(this)" onmouseout="hoverout(this)">
+    </body>
+</html>
