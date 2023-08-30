@@ -20,3 +20,6 @@ e1 = Employee()
 e1.getInfo()
 e1.updateSalary()
 e1.display()
+
+# Write a python program by creating a class called Employee to store the details of Name, Employee_ID,
+# Department and Salary, and implement a method to update salary of employees belonging to a given department.
