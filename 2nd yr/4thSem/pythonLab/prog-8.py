@@ -37,3 +37,5 @@ if nObj.check(n):
     print("Yes, it is a palindrome!")
 else:
     print("No, it is not a palindrome!")
+
+# Write a python program to find the whether the given input is palindrome or not (for both string and integer) using the concept of polymorphism and inheritance.
