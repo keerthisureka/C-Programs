@@ -13,3 +13,5 @@ for i in range(1, 11):
     except Exception:
         continue
 print("Done!")
+
+# Write a python program to download the all XKCD comics.
