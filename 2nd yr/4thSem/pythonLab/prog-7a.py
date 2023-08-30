@@ -44,3 +44,5 @@ t1.showArea()
 r1 = Rectangle(5, 10)
 r1.calcArea()
 r1.showArea()
+
+# By using the concept of inheritance write a python program to find the area of triangle, circle and rectangle
