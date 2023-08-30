@@ -41,3 +41,5 @@ for row in range(1, sheet.max_row+1):
     avg = sheet['G' + str(row)].value
     print("%4s %12s %20s %7s %7s %7s %7s %7.2s" % (row, USN, Name, test1, test2, test3, tot, avg))
 wb.close()
+
+# Demonstrate python program to read the data from the spreadsheet and write the data in to the spreadsheet
