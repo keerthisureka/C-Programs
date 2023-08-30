@@ -1,10 +1,12 @@
 package OS;
 import java.util.*;
 
+
+// Program to implement the LRU page replacement algorithm. Compute the page faults for a given reference string.
 public class LRU {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the reference string: ");
+		System.out.println("Enter the reference string: "); // Ex: 7 0 1 2 0 3 0 4 2 3 0 3 2 1 2 0 1 7 0 1
 		String s = sc.nextLine();
 		String[] refstr = s.split(" ");
 		
@@ -13,7 +15,7 @@ public class LRU {
 			ref.add(Integer.parseInt(refstr[i]));
 		}
 		
-		System.out.print("Enter the number of frames: ");
+		System.out.print("Enter the number of frames: "); // Ex: 3
 		int n = sc.nextInt();
 		ArrayList<Integer> frames = new ArrayList<Integer>();
 		int count = 0;
@@ -49,7 +51,7 @@ public class LRU {
 					System.out.println(frames);
 				}
 			}
-			System.out.println("Page Faults: " + count);
+			System.out.println("Page Faults: " + count); // Ex: Page Faults: 12
 			System.exit(0);
 		}
 	}
