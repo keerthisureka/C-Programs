@@ -54,7 +54,7 @@ public class Warshal {
 				}
 			}
 		}
-		System.out.println("following matrix shows the shortest distances between every pair of vertices");
+		System.out.println("Following matrix shows the shortest distances between every pair of vertices");
 		Warshal floydwarshal = new Warshal(n);
 		floydwarshal.floydwarshal(wmatrix);
 		sc.close();
