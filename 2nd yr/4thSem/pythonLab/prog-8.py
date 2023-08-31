@@ -9,7 +9,7 @@ class PaliStr:
         return self.isPali
 
 class PaliInt(PaliStr):
-    def __init(self):
+    def __init__(self):
         self.isPali = False
     def check(self, n):
         temp = n
