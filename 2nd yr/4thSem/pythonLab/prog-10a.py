@@ -1,6 +1,6 @@
 from PyPDF2 import PdfWriter, PdfReader
 
-num = int(input("Enter page number you want combine from multiple documents: "))
+num = int(input("Enter page number you want to combine from multiple documents: "))
 
 pdf1 = open('Lab Manual-PPL.pdf', 'rb') # any pdf file name
 pdf2 = open('PYTHON DICTIONARIES.pdf', 'rb') # another pdf file name
