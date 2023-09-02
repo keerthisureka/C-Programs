@@ -3,8 +3,8 @@ import requests, json # importing requests and json
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?" # base URL
 CITY = input("Enter City name : ")
 API_KEY = input("Enter your API_KEY : ") # Enter your API Key
-# API_KEY = "7bdccf825b7dd119a05ac2e0afaf1aaa"
-# API_KEY = "51a45f3640543d030d1e78bd52d2649c"
+# API_KEY = "7bdccf825b7dd119a05ac2e0afaf1aaa" for CITY = Chennai
+# API_KEY = "51a45f3640543d030d1e78bd52d2649c" for CITY = Bangalore
 
 URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY # upadting the URL
 response = requests.get(URL) # HTTP request
