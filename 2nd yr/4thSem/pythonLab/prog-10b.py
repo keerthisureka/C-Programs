@@ -24,6 +24,4 @@ if response.status_code == 200: # checking the status code of the request
 else:
  print("Error in the HTTP request") # showing the error message
 
-
-'''10.b.Fetch weather data from the JSON
-Write a python program to fetch current weather data from the JSON file'''
+# Fetch weather data from the JSON. Write a python program to fetch current weather data from the JSON file.
