@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.util.*;
+
 class subset {
 	int s[], x[];
 	int d, n;
@@ -44,7 +45,7 @@ class subset {
 	}
 }
 
-public class subset_demo {
+public class Subset {
 	public static void main(String[] args) {
 		subset s = new subset();
 		s.read();
