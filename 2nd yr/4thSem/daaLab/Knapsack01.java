@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Knapsack01 {
+class Knapsack {
 	int[] weights;
 	int[] values;
 	int objects, W;
@@ -8,7 +8,7 @@ class Knapsack01 {
 	int i, j;
 	int[][] keep;
 		
-	Knapsack01(Scanner sc) {
+	Knapsack(Scanner sc) {
 		System.out.println("Enter no. of objects and total weights: ");
 		objects = sc.nextInt();
 		W = sc.nextInt();
@@ -63,9 +63,9 @@ class Knapsack01 {
 	}
 }
 
-public class MyClass {
+public class Knapsack01 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Knapsack01 obj = new Knapsack01(sc);
+		Knapsack obj = new Knapsack(sc);
 	}
 }
