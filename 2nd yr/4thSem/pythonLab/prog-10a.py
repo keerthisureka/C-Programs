@@ -17,5 +17,6 @@ pdf_writer.add_page(page)
 
 with open('output.pdf', 'wb') as output: # merged pdf name will be "output" in this case
     pdf_writer.write(output)
+    print("PDF pages merged!")
 
 # Merge selected pages from Multiple PDFs to a new PDF. Write a python program to combine select pages from many PDFs.
