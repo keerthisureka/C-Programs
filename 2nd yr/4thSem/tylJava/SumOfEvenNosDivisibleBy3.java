@@ -14,4 +14,4 @@ public class SumOfEvenNosDivisibleBy3 {
 	}
 }
 
-// Find the sum of even nos which are divisible by 3 from 0 to n(n as input).
+// Find the sum of even nos which are divisible by 3 from 0 to n(n is the input).
