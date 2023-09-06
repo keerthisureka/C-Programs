@@ -28,3 +28,5 @@ public class LeaderElement {
 // Ex: 1 6 17 3 4 5 2
 // o/p: 17 5 2
 // All the elements on the right to 17 are smaller than 17, similarly 5 and 2
+
+// If an element is bigger than every other element to its right, it is considered a leader.
