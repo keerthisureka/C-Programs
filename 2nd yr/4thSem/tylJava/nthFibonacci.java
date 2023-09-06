@@ -1,4 +1,3 @@
-package tyljava;
 import java.util.*;
 
 public class nthFibonacci {
