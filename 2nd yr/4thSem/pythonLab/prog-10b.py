@@ -3,10 +3,10 @@ import requests, json # importing requests and json
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?" # base URL
 CITY = input("Enter City name : ")
 API_KEY = input("Enter your API_KEY : ") # Enter your API Key
-# API_KEY = "7bdccf825b7dd119a05ac2e0afaf1aaa" for CITY = Chennai
-# API_KEY = "51a45f3640543d030d1e78bd52d2649c" for CITY = Bangalore
+# API_KEY = "7bdccf825b7dd119a05ac2e0afaf1aaa"
+# API_KEY = "51a45f3640543d030d1e78bd52d2649c"
 
-URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY # upadting the URL
+URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY # updating the URL
 response = requests.get(URL) # HTTP request
 
 if response.status_code == 200: # checking the status code of the request
