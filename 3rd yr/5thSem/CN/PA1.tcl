@@ -1,3 +1,5 @@
+# Prog-1: 3 node point-to-point network with queue limit, bandwidth, etc
+
 set ns [new Simulator]
 set nf [open PA1.nam w]
 $ns namtrace-all $nf
