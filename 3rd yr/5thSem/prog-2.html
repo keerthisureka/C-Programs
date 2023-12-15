@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Program-2</title>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script> -->
+        <script src="./angular.min.js"></script>
+    </head>
+
+    <body ng-app="myApp2">
+        <h2>Shopping List</h2>
+
+        <div ng-controller="shopping">
+            <ol>
+                <li ng-repeat="eatable in shoppingItems">{{eatable}}</li>
+            </ol>
+            <br>
+            Enter an item to add: <input type="text" id="item" ng-model="item_name" >
+            &emsp;
+            <input type="button" value="Add" ng-click="addItem()" >
+            <br><br>
+            Select an item to remove: 
+            <select id="sel_item" ng-model="selected_item">
+                <option ng-repeat="thing in shoppingItems">{{thing}}</option>
+            </select>&emsp;
+            <input type="button" value="Remove" ng-click="removeItem()" >
+        </div>
+
+        <script>
+            var app = angular.module("myApp2", []);
+            app.controller("shopping", function($scope) {
+                $scope.shoppingItems = ["Wheat", "Rice", "Salt", "Sugar"];
+                $scope.addItem = function() {
+                    if($scope.item_name && $scope.shoppingItems.indexOf($scope.item_name) == -1) {
+                        $scope.shoppingItems.push($scope.item_name);
+                        $scope.item_name = "";
+                    }
+                    else {
+                        if($scope.item_name) {
+                            alert("This item already exists!");
+                            document.getElementById("item").focus();
+                            return false;
+                        }
+                        else {
+                            alert("No item found. Please enter an item!");
+                            document.getElementById("item").focus();
+                            return false;
+                        }
+                    }
+                }
+                $scope.removeItem = function() {
+                    if($scope.shoppingItems.indexOf($scope.selected_item) == -1) {
+                        alert("Please select an item to remove!");
+                        document.getElementById("sel_item").focus();
+                        return false;
+                    }
+                    else {
+                        let idx = $scope.shoppingItems.indexOf($scope.selected_item);
+                        $scope.shoppingItems.splice(idx, 1);
+                        $scope.selected_item="";
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
