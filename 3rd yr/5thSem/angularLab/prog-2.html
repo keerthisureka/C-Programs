@@ -18,6 +18,7 @@
             <input type="button" value="Add" ng-click="addItem()" >
             <br><br>
             Select an item to remove: 
+<!--        <select id="sel_item" ng-model="selected_item" ng-options="item for item in shoppingItems"></select> -->
             <select id="sel_item" ng-model="selected_item">
                 <option ng-repeat="thing in shoppingItems">{{thing}}</option>
             </select>&emsp;
