@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    </head>
+    <body ng-app="myapp1">
+        <div ng-controller="show">
+            <h1><u>{{mymsg}}</u></h1>
+        </div>
+        <script>
+            var a = angular.module("myapp1", []);
+            a.controller("show", function($scope) {
+                $scope.mymsg = "Welcome to Angular JS";
+            });
+        </script>
+    </body>
+</html>

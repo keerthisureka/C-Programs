@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    </head>
+    <body ng-app>
+        <div ng-init="qty=3; price=50; qty1=5; price1=10">
+            <p>The total cost is {{qty * price}}</p> 
+            <!-- or <p>The total cost is <span ng-bind="qty * price"></span></p> -->
+            <p>The total cost is {{qty1 * price1}}</p>
+        </div>
+    </body>
+</html>
