@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Program-3</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    </head>
+
+    <body ng-app="myApp3">
+        <h2>Angular JS Simple Calculator</h2>
+        <div ng-controller="calcCntrl">
+            Enter first number: <input type="text" ng-model="num1">&emsp;
+            <BR>Select operator: <select ng-model="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>&emsp;
+            <BR> Enter second number: <input type="text" ng-model="num2">&emsp;
+            <button ng-click="compute()">Compute</button>
+            <br><br/>
+            <b ng-model="result">{{num1 + " " + operator + " " + num2 + " = " + result}}</b>
+        </div>
+    </body>
+
+    <script>
+        var a = angular.module("myApp3", []);
+        a.controller("calcCntrl", function($scope) {
+            $scope.compute = function() {
+                if($scope.num1 == "") {
+                    alert("First number cannot be empty!");
+                }
+                else if($scope.num2 == "") {
+                    alert("Second number cannot be empty!");
+                }
+                switch($scope.operator) {
+                    case "+": $scope.result = (parseFloat($scope.num1) + parseFloat($scope.num2)).toFixed(4);
+                              break;
+                    case "-": $scope.result = (parseFloat($scope.num1) - parseFloat($scope.num2)).toFixed(4);
+                                break;
+                    case "*": $scope.result = (parseFloat($scope.num1) * parseFloat($scope.num2)).toFixed(4);
+                                break;
+                    case "/": if($scope.num2 == 0) {
+                                    $scope.result = "";
+                                    alert("Divide by zero error! Second number cannot be zero.");
+                                    break;
+                                }
+                                $scope.result = (parseFloat($scope.num1) / parseFloat($scope.num2)).toFixed(4);
+                                break;
+                    default: alert("Please select an operator!");
+                }
+            }
+        });
+    </script>
+</html>

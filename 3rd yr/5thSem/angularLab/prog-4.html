@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Program-4</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    </head>
+
+    <body ng-app="myApp4">
+        <div ng-controller="dis">
+            <h2>Angular JS application to find factorial and square of a number</h2>
+            Enter a number: <input type="text" ng-model="num"><br/><br/>
+            <button ng-click="fact()">Compute Factorial</button>&emsp;
+            <button ng-click="square()">Compute Square</button>
+            <br/><br/>
+            <b>{{num + sym + " = " + result}}</b>
+        </div>
+    </body>
+
+    <script>
+        var a = angular.module("myApp4", []);
+        a.controller("dis", function($scope) {
+            $scope.fact = function() {
+                if($scope.num == "") {
+                    alert("Please enter a number!");
+                }
+                else if($scope.num >= 0) {
+                    $scope.sym = "!";
+                    $scope.result = 1;
+                    for(var i=1; i<=parseInt($scope.num); i++) {
+                        $scope.result *= i;
+                    }
+                }
+                else {
+                    alert("Factorial cannot be determined!");
+                }
+            }
+            $scope.square = function() {
+                if($scope.num == "") {
+                    alert("Please enter a number!");
+                }
+                else {
+                    $scope.sym = "^2";
+                    $scope.result = (parseFloat($scope.num) * parseFloat($scope.num)).toFixed(2);
+                }
+            }
+        });
+    </script>
+</html>

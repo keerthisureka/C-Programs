@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Program-5</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <style>
+            input {
+                font-size: 17px;
+            }
+        </style>
+    </head>
+
+    <body ng-app="myApp5">
+        <h2>Angular JS program to display Student Details</h2>
+        <div ng-controller="show">
+            <input type="text" placeholder="Enter #(students)" ng-model="num" />
+            <input type="button" value="Generate" ng-click="generate()" />
+            <br /><br />
+            <table width="300px" border="1px" ng-show="studentData.length>0">
+                <tr>
+                    <th>Sl No.</th>
+                    <th>Name</th>
+                    <th>CGPA</th>
+                </tr>
+                <tr ng-repeat="st in studentData">
+                    <td>{{st.slno}}</td>
+                    <td>{{st.name}}</td>
+                    <td>{{st.cgpa}}</td>
+                </tr>
+            </table>
+            <br /><br />
+            <b>The number of students = {{studentData.length}}</b>
+        </div>
+    </body>
+
+    <script>
+        var a = angular.module("myApp5", []);
+        a.controller("show", function($scope) {
+            $scope.generate = function() {
+                $scope.studentData = [];
+                if($scope.num == "") {
+                    alert("Please enter a number!");
+                }
+                else {
+                    for(var i=1; i<=$scope.num; i++) {
+                        var student = {
+                            "slno" : i,
+                            "name" : "Student " + i,
+                            "cgpa" : (Math.random() * 10).toFixed(2)
+                        }
+                        $scope.studentData.push(student);
+                    }
+                }
+            }
+        });
+    </script>
+</html>
