@@ -42,3 +42,19 @@ public class BellmanFord {
 		}
 	}
 }
+
+
+
+/* SAMPLE OUTPUT:
+Enter the number of vertices: 4
+Enter the adjacency matrix: 
+0 2 5 3
+2 0 999 1
+5 999 0 4
+3 1 4 0
+Enter the source node: 1
+Distance of source 1 to 0 is 2
+Distance of source 1 to 1 is 0
+Distance of source 1 to 2 is 5
+Distance of source 1 to 3 is 1
+*/
