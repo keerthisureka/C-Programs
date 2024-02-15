@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Program-10</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    </head>
+    <body ng-app="myApp10">
+        <h2>Manage Items</h2>
+        <div ng-controller="show">
+            <input type="text" placeholder="Enter an item to add" ng-model="item" id="itm" />&emsp;
+            <input type="button" value="Add" ng-click="add()" />
+            <br /><br /><br />
+
+            <b>List of Items</b><br /><br />
+            <table border="1" width="180px">
+                <tr>
+                    <th>Sl No.</th>
+                    <th>Item</th>
+                    <th>Action</th>
+                </tr>
+                <tr ng-repeat="item in items">
+                    <td>{{$index+1}}</td>
+                    <td>{{item}}</td>
+                    <td><input type="button" value="Remove" ng-click="remove(item)" /></td>
+                </tr>
+            </table>
+            <br /><br />
+            <b>Total number of items: {{items.length}}</b>
+        </div>
+    </body>
+</html>
+
+<script>
+    var a = angular.module("myApp10", []);
+    a.controller("show", function($scope) {
+        $scope.items = [ "Wheat", "Rice", "Salt", "Pepper"];
+        $scope.add = function() {
+            if($scope.item && $scope.items.indexOf($scope.item)==-1)
+            {
+                $scope.items.push($scope.item);
+                $scope.item = "";
+            }
+            else{
+                if($scope.item)
+                {
+                    alert("Item already exists!");
+                    document.getElementById("itm").focus();
+                    return false;
+                }
+                else{
+                    alert("Enter an element to be added!");
+                    document.getElementById("itm").focus();
+                    return false;
+                }
+            }
+        }
+        $scope.remove = function(item) {
+            var verify = confirm("Do you really want to delete this item?");
+            if(verify)
+            {
+                ind = $scope.items.indexOf(item);
+                $scope.items.splice(ind, 1);
+            }
+        }
+    });
+</script>
