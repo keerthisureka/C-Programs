@@ -22,3 +22,7 @@
 
 - Run the server to open default django page:
   python manage.py runserver
+
+
+// NOTE: Create your own virtual environment and activate it using the commands mentioned in this file.
+// The env file in this directory is just for demo purposes.
