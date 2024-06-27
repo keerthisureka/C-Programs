@@ -42,3 +42,14 @@ Adding Student data in the backend:
 >>> for s in studList:
   ...  s.save()
 ```
+
+To siaplay the inserted values:
+```
+Course.objects.all().values()
+Student.objects.all().values()
+```
+
+To quit the prompt, type the command:
+```
+quit()
+```
