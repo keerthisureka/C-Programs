@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <nav>
+            <a href="/home">Home</a>&emsp; | &emsp;
+            <a href="/aboutus">About Us</a>&emsp; | &emsp;
+            <a href="/contactus">Contact Us</a>&emsp; |
+        </nav>
+        <section>
+            {% block content %}{% endblock %}
+        </section>
+        <div style="margin-top: 470px;">
+            <footer>
+                <hr />
+                &copy; 2024. CMRIT Bengaluru.
+            </footer>
+        </div>
+    </body>
+</html>
