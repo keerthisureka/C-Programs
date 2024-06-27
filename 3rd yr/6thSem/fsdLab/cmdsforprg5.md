@@ -43,7 +43,7 @@ Adding Student data in the backend:
   ...  s.save()
 ```
 
-To siaplay the inserted values:
+To display the inserted values:
 ```
 Course.objects.all().values()
 Student.objects.all().values()
