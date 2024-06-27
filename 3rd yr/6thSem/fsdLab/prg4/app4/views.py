@@ -12,6 +12,7 @@ def show_offset_datetime(request):
     resp += "<h2>Four hours behind date and time is %s</h2>" % (behind)
     return HttpResponse(resp)
 
+
 '''
 # This is for accepting the offset value from the user in the url and pass it to the function (The name given here for offset value is os).
 
