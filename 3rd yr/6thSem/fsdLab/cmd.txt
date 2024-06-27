@@ -1,3 +1,4 @@
+// Commands to create a django web application
 - Create Virtual Environment:
   python -m venv env_name
 
@@ -14,7 +15,7 @@
   django-admin startproject project_name
 
 - Go to project directory:
-  cd project-name
+  cd project_name
 
 - Create a django app within the project:
   python manage.py startapp app_name
