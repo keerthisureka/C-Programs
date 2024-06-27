@@ -23,3 +23,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('offset/', show_offset_datetime),
 ]
+
+
+'''
+# For accepting the user input from url specified.
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('offset/<int:os>/', show_offset_datetime, name='show_offset_datetime'),
+]
+'''
