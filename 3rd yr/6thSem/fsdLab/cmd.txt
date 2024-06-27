@@ -1,0 +1,23 @@
+- Create Virtual Environment:
+  python -m venv env_name
+
+- Activate venv:
+  (for Ubuntu/Linux/MacOS)
+  source env_name/bin/activate
+  (for Windows)
+  env_name\Scripts\activate.bat
+
+- Install Django:
+  pip install django
+
+- Create a new django project:
+  django-admin startproject project_name
+
+- Go to project directory:
+  cd project-name
+
+- Create a django app within the project:
+  python manage.py startapp app_name
+
+- Run the server to open default django page:
+  python manage.py runserver
