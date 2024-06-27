@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h2>Students enrolled in this course:</h2>
+        <table border="1px">
+            <tr>
+                <th>Student Name</th>
+                <th>Student USN</th>
+                <th>Student Sem</th>
+            </tr>
+            {% for s in student_list %}
+                <tr>
+                    <td>{{s.student_name}}</td>
+                    <td>{{s.student_usn}}</td>
+                    <td align="center">{{s.student_sem}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
