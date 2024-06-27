@@ -1,0 +1,1 @@
+Create your own virtual environment and activate it using the commands mentioned in "cmd.txt" file under fsdLab directory. This env file is just for demo purposes.
