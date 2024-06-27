@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Program-5</title>
+    </head>
+    <body>
+        <h2>Unordered list of Fruits</h2>
+        <ul>
+            {% for f in fruits %}
+            <li>{{ f }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Ordered list of Students</h2>
+        <ol>
+            {% for s in students %}
+            <li>{{ s }}</li>
+            {% endfor %}
+        </ol>
+    </body>
+</html>
