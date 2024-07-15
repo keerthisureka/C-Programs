@@ -17,3 +17,7 @@
 - **prog4:** Develop a program to demonstrate basic geometric operations on the 3D object.
 - **prog5:** Develop a program to demonstrate 3D transformation on 3D objects.
 - **prog6:** Write a program to read a digital image. Split and display image into 4 quadrants, up, down, right and left.
+- **prog7:** Develop a program to demonstrate Animation effects on simple objects.
+- **prog8:** Write a program to show rotation, scaling, and translation on an image.
+- **prog9:** Read an image and extract and display low-level features such as edges, textures using filtering techniques.
+- **prog10:** Write a program to contour an image.
