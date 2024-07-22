@@ -9,6 +9,12 @@
   gcc prog_name.c -lm -lGL -lglut -lGLU
   ```
 
+## Commands to open the anaconda jupyter notebook on Ubuntu
+```
+source ~/anaconda3/bin/activate root
+anaconda-navigator
+```
+
 
 ## Questions for each program:
 - **prog1:** Develop a program to draw a line using Bresenham's line drawing technique.
