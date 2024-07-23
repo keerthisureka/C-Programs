@@ -27,3 +27,5 @@ anaconda-navigator
 - **prog8:** Write a program to show rotation, scaling, and translation on an image.
 - **prog9:** Read an image and extract and display low-level features such as edges, textures using filtering techniques.
 - **prog10:** Write a program to contour an image.
+- **prog11:** Write a program to blur and smoothing an image.
+- **prog12:** Write a program to detect a face/s in an image.
